@@ -22,5 +22,12 @@ gedit /etc/fstab
 /swapfile                                 none            swap    sw              0       0 
 ```
 
+* To remove swap, copy and paste following anywhere in Terminal
+```bash
+cd / && sudo swapoff /swapfile && sudo rm -rf swapfile
+```
+
+Reboot once and check if swap is successfully removed
+
 
 Inspired from and Credits to [SavvyNik](https://youtu.be/HSbBl31ohjE?si=4KBg-sR7yL3hTQTz)
